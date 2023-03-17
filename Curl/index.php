@@ -37,7 +37,7 @@ if(!empty($_POST)){
                             background-color: white;
                             border-radius: 10px;" 
                 >'  
-                ."<button type='button' class='btn-close' aria-label='Close' style='margin-left:95%'><a href ='./views/select.php' style='text-decoration:none; color:black'> . </a></button>"
+                ."<button type='button' class='btn-close' aria-label='Close' style='margin-left:95%'><a href ='' style='text-decoration:none; color:black'> . </a></button>"
                 .'<center><h1 >'.$data["name"].'</h1>'
                 ."<p><b> Date&Time : </b>".$currentTime."</p>"
                 .'<img src="' . $icon . '" alt="">'

@@ -17,7 +17,7 @@ if(!empty($_POST)){
         $icon = "https://openweathermap.org/img/wn/". $data["weather"][0]["icon"] . "@2x.png";  
     }
     if(!empty($data)){
-        die('<body style="margin: 0%;
+        echo'<body style="margin: 0%;
                 background: linear-gradient(#46949b,
                 #46949b,
                 #a3d4f3,
@@ -32,7 +32,7 @@ if(!empty($_POST)){
                             background-color: white;
                             border-radius: 10px;" 
                 >'  
-                ."<button type='button' class='btn-close' aria-label='Close' style='margin-left:95%'><a href ='./views/select.php' style='text-decoration:none; color:black'> X </a></button>"
+                ."<button type='button' class='btn-close' aria-label='Close' style='margin-left:95%'><a href ='' style='text-decoration:none; color:black'> . </a></button>"
                 .'<center><h1 >'.$data["name"].'</h1>'
                 ."<p><b> Date&Time : </b>".$currentTime."</p>"
                 .'<img src="' . $icon . '" alt="">'
@@ -43,7 +43,7 @@ if(!empty($_POST)){
                 ."<p><b>  Wind: : </b>".($data["wind"]["speed"])."Km/h</p>"
                 .'</center>'.
            '</div></body>'
-        );
+        ;
     }
 
 }

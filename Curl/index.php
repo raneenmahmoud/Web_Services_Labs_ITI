@@ -22,7 +22,7 @@ if(!empty($_POST)){
         $icon = "https://openweathermap.org/img/wn/". $data["weather"][0]["icon"] . "@2x.png";  
     }
     if(!empty($data)){
-        die('<body style="margin: 0%;
+        echo'<body style="margin: 0%;
                 background: linear-gradient(#46949b,
                 #46949b,
                 #a3d4f3,
@@ -48,7 +48,7 @@ if(!empty($_POST)){
                 ."<p><b>  Wind: : </b>".($data["wind"]["speed"])."Km/h</p>"
                 .'</center>'.
            '</div></body>'
-        );
+        ;
     }
 
 }

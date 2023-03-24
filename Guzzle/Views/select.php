@@ -29,8 +29,8 @@
 </head>
 <body>
     <section class="container p-5 d-flex justify-content-center align-items-center">
-      <div style="width:80%" class="shadow-lg p-5">
-        <h1 class="text-center p-5">Know Weather</h1>
+      <div style="width:80%" class="shadow-lg p-5 rounded-5">
+        <h1 class="text-center p-5">Get Weather</h1>
         <form method="post" action="index.php">
         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="city">
             <option selected>Open this select menu</option>
@@ -40,7 +40,7 @@
             }
             ?>
         </select>
-        <input type="submit" name="submit" value="Know weather" style="margin-left:30vw">
+        <input type="submit" name="submit" value="Get weather" style="margin-left:30vw" class="rounded-3 border border-white">
         </form>
       </div>
     </section>
